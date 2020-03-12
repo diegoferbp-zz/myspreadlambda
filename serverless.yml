@@ -22,8 +22,8 @@ service: myspreadlambda
 
 provider:
   name: aws
-  runtime: java8
-  profile: diegoferbp
+  runtime: java11
+  profile: poc
 
 # you can overwrite defaults here
 #  stage: dev
