@@ -1,4 +1,10 @@
+plugins {
+    id 'distribution'
+}
+
 apply plugin: 'java'
+
+
 
 repositories {
     mavenCentral()
@@ -6,6 +12,7 @@ repositories {
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
 
 dependencies {
     compile (
@@ -27,7 +34,7 @@ task buildZip(type: Zip) {
     // Link: https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Zip.html
 
     // set the base name of the zip file
-    baseName = "hello"
+    baseName = "myspreadlambda"
     from compileJava
     from processResources
     into('lib') {

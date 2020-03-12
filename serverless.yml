@@ -23,6 +23,7 @@ service: myspreadlambda
 provider:
   name: aws
   runtime: java8
+  profile: diegoferbp
 
 # you can overwrite defaults here
 #  stage: dev
@@ -50,7 +51,7 @@ provider:
 
 # you can add packaging information here
 package:
-  artifact: build/distributions/hello.zip
+  artifact: build/distributions/myspreadlambda.zip
 
 functions:
   hello:
